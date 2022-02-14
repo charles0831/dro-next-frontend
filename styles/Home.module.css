@@ -1,0 +1,109 @@
+.container {
+  min-height: 100vh;
+  padding: 43px 41px;
+  background-color: #292929;
+}
+.filterContainer {
+  padding: 14px 45px;
+  background-color: #131313;
+  border-radius: 15px;
+  color: #a5a5a5;
+  font-family: "SF Pro Display";
+}
+.filterContainer:hover {
+  background-color: #191919;
+}
+.filterTitle {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+.headerTitle {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 35px;
+  color: #ffffffde;
+}
+.productTitle {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff80;
+  margin-top: 21px;
+}
+.divider {
+  border: 1px solid #cbcbcb80;
+}
+.productContainer {
+  background: #131313;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+.productCard {
+  background-color: #232323;
+  border-radius: 5px;
+  padding: 10px;
+  /* max-width: 270px;
+  min-width: 268px; */
+}
+.productImage {
+  border-radius: 5px;
+}
+.cardName {
+  font-family: SF Pro Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+.cardBrandNamePrice {
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff99;
+}
+.cardBrandPrice {
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+.cardDescription {
+  font-size: 11px;
+  color: #ffffff99;
+}
+.loadingArea {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+.loading {
+  position: relative;
+  left: calc(50% - 32px);
+  top: calc(50vh - 32px);
+}
+.select {
+  width: 100%;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  background-color: #292929;
+  padding: 10px 13px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 17px;
+}
+.option {
+  color: #ffffff;
+  font-family: SF Pro Display;
+  font-size: 17px;
+}
