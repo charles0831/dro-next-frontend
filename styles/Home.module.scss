@@ -1,7 +1,8 @@
+@import "styles/variable.module.scss";
+
 .container {
   min-height: 100vh;
-  padding: 43px 41px;
-  background-color: #292929;
+  background-color: $blue-gray-400-color;
 }
 .filterContainer {
   padding: 14px 45px;
