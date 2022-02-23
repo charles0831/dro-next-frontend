@@ -9,7 +9,6 @@ class Auth {
   signin = (authInfo) => {
     return axios.post(API_URL + "auth/login", authInfo).then((response) => {
       if (response.data.token !== null) {
-        console.log("@@@@@@@@@@@@@@@@@", response.data.data);
         localStorage.setItem("token", JSON.stringify(response.data.data.token));
       }
       return response.data;
