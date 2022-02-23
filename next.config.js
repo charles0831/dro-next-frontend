@@ -1,3 +1,5 @@
+const path = require("path");
+
 const appConfig = {
   images: {
     domains: [
@@ -8,6 +10,9 @@ const appConfig = {
       "png.pngtree.com",
       "www.pngall.com",
     ],
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 };
 

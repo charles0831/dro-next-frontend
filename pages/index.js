@@ -1,12 +1,23 @@
-import styles from "styles/Home.module.css";
-import Api from "api/api";
+import styles from "styles/Home.module.scss";
+import Api from "apis/auth";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import ReactLoading from "react-loading";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const [progressStatus, setProgressStatus] = useState(false);
   const [success, setSuccess] = useState("");
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      router.push("/dashboard");
+    } else {
+      router.push("/auth/login");
+    }
+  }, []);
+
   const handleLoginClick = () => {
     console.log("+++++++++++++++++++++++++++++++");
     setProgressStatus(true);
