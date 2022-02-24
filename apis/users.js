@@ -6,13 +6,13 @@ const { publicRuntimeConfig } = getConfig();
 const API_URL =
   publicRuntimeConfig.API_ENDPOINT || "http://localhost:8000/api/";
 
-class Members {
-  getMemberList = (data) => {
-    return axios.get(API_URL + "members", {
-      params: data,
+class Users {
+  getUsers = () => {
+    return axios.get(API_URL + "users", {
+      params: {},
       headers: authHeader(),
     });
   };
 }
 
-export default new Members();
+export default new Users();

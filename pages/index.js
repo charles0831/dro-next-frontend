@@ -6,10 +6,13 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (localStorage.getItem("token")) {
+    if (
+      localStorage.getItem("token") &&
+      localStorage.getItem("token") !== undefined
+    ) {
       router.push("/dashboard");
     } else {
-      router.push("/auth/login");
+      router.push("/auth/signin");
     }
   }, []);
 
