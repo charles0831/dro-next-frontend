@@ -13,7 +13,10 @@ export default function Dashboard() {
   const [memberInfo, setMemberInfo] = useState([]);
 
   useEffect(() => {
-    if (localStorage.getItem("token")) {
+    if (
+      localStorage.getItem("token") &&
+      localStorage.getItem("token") !== "undefined"
+    ) {
       router.push("/dashboard");
     } else {
       router.push("/auth/signin");

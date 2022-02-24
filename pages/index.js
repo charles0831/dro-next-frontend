@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     if (
       localStorage.getItem("token") &&
-      localStorage.getItem("token") !== undefined
+      localStorage.getItem("token") !== "undefined"
     ) {
       router.push("/dashboard");
     } else {
