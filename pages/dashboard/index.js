@@ -51,8 +51,10 @@ export default function Dashboard() {
         <p className="text-6xl">Welcome to Dashboard!</p>
         <br />
         <p className="text-2xl mb-7">You successfully logged in!</p>
-        {memberInfo?.map((item) => (
-          <p className="text-xl text-left">Email: {item.email}</p>
+        {memberInfo?.map((item, index) => (
+          <p key={index} className="text-xl text-left">
+            Email: {item.email}
+          </p>
         ))}
         <div className={"mt-9 flex justify-end items-center"}>
           <div>
